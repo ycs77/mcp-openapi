@@ -4,7 +4,7 @@ import { z } from "zod";
 import { ISpecExplorer } from "./core/interfaces/ISpecService";
 import { ConsoleLogger, Logger } from "./core/Logger";
 
-export const VERSION = "0.2.0";
+export const VERSION = "0.2.1";
 
 export class McpService {
   private readonly logger: Logger;
