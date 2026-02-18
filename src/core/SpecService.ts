@@ -61,6 +61,7 @@ export class FileSystemSpecService implements ISpecStore, ISpecExplorer {
         maxSize: config.cache?.maxSize || 500,
         ttl: config.cache?.ttl || 60 * 60 * 1000, // 1 hour
       },
+      catalogGroups: config.catalogGroups ?? false,
     };
 
     this.logger = logger || new ConsoleLogger();
@@ -179,7 +180,7 @@ export class FileSystemSpecService implements ISpecStore, ISpecExplorer {
                 method,
                 title: operation.summary,
                 description: operation.description,
-                group: operation.tags?.[0],
+                group: this.config.catalogGroups ? operation.tags?.[0] : undefined,
                 operationId: operation.operationId,
               });
             }

@@ -21,6 +21,8 @@ export interface SpecServiceConfig {
     /** Time to live for cached items in milliseconds */
     ttl?: number;
   };
+  /** Whether to include group (tag) information in the catalog */
+  catalogGroups?: boolean;
 }
 
 /**

@@ -26,6 +26,7 @@ program
     "Specify the dereferenced directory",
     "_dereferenced"
   )
+  .option("--catalog-groups", "Include group (tag) information in the catalog")
   .parse(process.argv);
 
 const options = program.opts();
@@ -41,6 +42,7 @@ const specServiceConfig: SpecServiceConfig = {
     maxSize: 1000,
     ttl: 60 * 60 * 1000, // 1 hour
   },
+  catalogGroups: options.catalogGroups ?? false,
 };
 
 async function main() {
