@@ -1,4 +1,4 @@
-# @reapi/mcp-openapi
+# @ycs77/mcp-openapi
 
 A Model Context Protocol (MCP) server that loads and serves multiple OpenAPI specifications to enable LLM-powered IDE integrations. This server acts as a bridge between your OpenAPI specifications and LLM-powered development tools like Cursor and other code editors.
 
@@ -44,13 +44,12 @@ Create a `.cursor/mcp.json` file in your project directory. This option is recom
 
 ```json
 {
-  "mcpServers": {
-    "@reapi/mcp-openapi": {
-      "command": "npx",
-      "args": ["-y", "@reapi/mcp-openapi@latest", "--dir", "./specs"],
-      "env": {}
-    }
-  }
+   "mcpServers": {
+      "@ycs77/mcp-openapi": {
+         "command": "npx",
+         "args": [ "-y", "@ycs77/mcp-openapi@latest", "--dir", "./specs"]
+      }
+   }
 }
 ```
 
@@ -65,13 +64,12 @@ Create or edit `~/.cursor/mcp.json` in your home directory to make the server av
 
 ```json
 {
-  "mcpServers": {
-    "@reapi/mcp-openapi": {
-      "command": "npx",
-      "args": ["-y", "@reapi/mcp-openapi@latest", "--dir", "/path/to/your/specs"],
-      "env": {}
-    }
-  }
+   "mcpServers": {
+      "@ycs77/mcp-openapi": {
+         "command": "npx",
+         "args": ["-y", "@ycs77/mcp-openapi@latest", "--dir", "/path/to/your/specs"]
+      }
+   }
 }
 ```
 
@@ -81,7 +79,7 @@ After adding the configuration:
 
 1. Open Cursor IDE
 2. Go to Settings > Cursor Settings > MCP
-3. Enable the @reapi/mcp-openapi server
+3. Enable the @ycs77/mcp-openapi server
 4. Click the refresh icon next to the server to apply changes
 
 > **Note**: By default, Cursor requires confirmation for each MCP tool execution. If you want to allow automatic execution without confirmation, you can enable [Yolo mode](https://docs.cursor.com/context/model-context-protocol#yolo-mode) in Cursor settings.

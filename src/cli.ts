@@ -12,7 +12,7 @@ import { McpService, VERSION } from "./McpService";
 const program = new Command();
 
 program
-  .name("@reapi/mcp-openapi")
+  .name("@ycs77/mcp-openapi")
   .description("MCP OpenAPI CLI tool")
   .version(VERSION)
   .option(
