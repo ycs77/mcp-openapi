@@ -3,7 +3,7 @@
 A Model Context Protocol (MCP) server that loads and serves multiple OpenAPI specifications to enable LLM-powered IDE integrations. This server acts as a bridge between your OpenAPI specifications and LLM-powered development tools like Cursor and other code editors.
 
 > [!NOTE]
-> This is a fork of [@reapi/mcp-openapi](https://github.com/reapi/mcp-openapi) with the following fixes:
+> This is a fork of [@reapi/mcp-openapi](https://github.com/ReAPI-com/mcp-openapi) with the following fixes:
 >
 > - **Missing human-readable descriptions**: The API catalog now exposes human-readable descriptions from OpenAPI definitions (such as `summary` and `description` fields), giving LLMs meaningful context when browsing available operations.
 
