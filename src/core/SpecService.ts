@@ -177,7 +177,9 @@ export class FileSystemSpecService implements ISpecStore, ISpecExplorer {
               operations.push({
                 path,
                 method,
+                title: operation.summary,
                 description: operation.description,
+                group: operation.tags?.[0],
                 operationId: operation.operationId,
               });
             }

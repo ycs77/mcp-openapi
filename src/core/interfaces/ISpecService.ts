@@ -44,8 +44,12 @@ export interface SpecOperationEntry {
   path: string;
   /** HTTP method (GET, POST, etc.) */
   method: string;
+  /** Optional title of the operation */
+  title?: string;
   /** Optional description of the operation */
   description?: string;
+  /** Optional group title of the operation */
+  group?: string;
   /** Unique identifier for the operation */
   operationId?: string;
 }
