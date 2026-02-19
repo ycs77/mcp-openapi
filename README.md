@@ -44,12 +44,12 @@ Create a `.cursor/mcp.json` file in your project directory. This option is recom
 
 ```json
 {
-   "mcpServers": {
-      "@ycs77/mcp-openapi": {
-         "command": "npx",
-         "args": [ "-y", "@ycs77/mcp-openapi@latest", "--dir", "./specs"]
-      }
-   }
+  "mcpServers": {
+    "@ycs77/mcp-openapi": {
+      "command": "npx",
+      "args": [ "-y", "@ycs77/mcp-openapi@latest", "--dir", "./specs"]
+    }
+  }
 }
 ```
 
@@ -64,12 +64,12 @@ Create or edit `~/.cursor/mcp.json` in your home directory to make the server av
 
 ```json
 {
-   "mcpServers": {
-      "@ycs77/mcp-openapi": {
-         "command": "npx",
-         "args": ["-y", "@ycs77/mcp-openapi@latest", "--dir", "/path/to/your/specs"]
-      }
-   }
+  "mcpServers": {
+    "@ycs77/mcp-openapi": {
+      "command": "npx",
+      "args": ["-y", "@ycs77/mcp-openapi@latest", "--dir", "/path/to/your/specs"]
+    }
+  }
 }
 ```
 
